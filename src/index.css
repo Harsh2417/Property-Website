@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary bg-gray-200;
+  }
+  .dropdown {
+    @apply w-full lg:max-w-[296px] cursor-pointer;
+  }
+  .dropdown-btn {
+    @apply flex h-[64px] items-center px-[18px] border rounded-lg;
+  }
+  .dropdown-icon-primary {
+    @apply text-2xl mr-[18px] text-violet-700;
+  }
+  .dropdown-icon-secondary {
+    @apply text-2xl text-violet-700 ml-auto;
+  }
+  .dropdown-menu {
+    @apply px-6 py-8 text-[15px] space-y-6 shadow-md bg-white absolute w-full z-10 list-none rounded-b-lg;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 80px;
+  box-shadow: rgba(194, 41, 41, 0.925) 1.95px 1.95px 2.6px;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  background-color: rgb(69, 221, 226);
+}
+.left span {
+  margin-right: 40px;
+}
+.right button {
+  margin-right: 30px;
+}
+.login {
+  color: rgb(3, 0, 0);
+  background-color: rgb(238, 238, 247);
+  border: none ;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+.signup {
+  color: rgb(3, 0, 0);
+  background-color: rgb(238, 238, 247);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+.home {
+  margin-top: 80px;
+}
+.search {
+  margin-top: 50px;
+}
+.fav {
+  color: rgb(3, 0, 0);
+  background-color: rgb(238, 238, 247);
+  padding: 0px;
+  border-radius: 0px;
+  margin-left: 67vw;
+  margin-bottom: 50px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+}
+.section {
+  margin-top: 80px;
+}
